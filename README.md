@@ -59,4 +59,4 @@ Matplotlib will be used for its versatility in creating a wide range of static, 
 This approach is aimed at extracting deeper insights and facilitating more advanced data exploration.
 
 ### **Collaboration and Feedback**
-I am open to collaboration and value feedback. If you have insights, suggestions, or relevant expertise, please feel free to contribute or reach out.
+Collaborations and feedback are welcome, especially from those with expertise in retail data analysis or Python-based data science techniques.
