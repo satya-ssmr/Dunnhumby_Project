@@ -31,9 +31,13 @@ This query displays the top 5 rows of the table transaction_data in descending o
 '''
 import pandas as pd
 Reading_data_transaction = pd.read_csv('transaction_data.csv')
+Reading_data_transaction_demo = pd.read_csv('hh_demographic.csv')
+Reading_data_transaction_prod = pd.read_csv('product.csv')
+print(Reading_data_transaction_demo.head())
+print(Reading_data_transaction_prod.head())
 print(Reading_data_transaction.info()) #Gives the information about the datatypes and missing values
 print(Reading_data_transaction.head()) #Top 5 rows view of the data
-print(Reading_data_transaction.describe(include='all')) #Gives the statistical summary of the data
+
 
 
 # Average sales value per basket
@@ -55,3 +59,10 @@ sns.scatterplot(x="BASKET_ID", y="SALES_VALUE", hue="household_key",
                 data=Reading_data_transaction)
 plt.title('Sales Value by Basket ID and Household Key')
 plt.show()
+
+
+
+
+merged = Reading_data_transaction.merge(Reading_data_transaction_prod, on='PRODUCT_ID')
+
+sales_by_category = merged.groupby('COMMODITY_DESC')['SALES_VALUE'].sum()
