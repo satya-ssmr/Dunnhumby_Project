@@ -1,13 +1,29 @@
 
 # **Dunnhumby Retail Data Analytics Project:**
 
+
+
 ### **Overview:**
 
-I am working on a data analysis project involving comprehensive datasets from Tesco, one of the UK's largest retail chains
-Dunnhumby is Tesco's Media and insight platform, famous for helping tesco establish Clubcard. 
-I am working with eight large datasets, some featuring over 2 million rows, to uncover insights into Tesco's operations and customer behavior.
+    I am working on a data analysis project involving comprehensive datasets from Tesco, one of the UK's largest 
+    retail chains. Dunnhumby is Tesco's Media and insight platform, famous for helping tesco establish Clubcard. 
+    I am working with eight large datasets, some featuring over 2 million rows, to uncover insights into Tesco's 
+    operations and customer behavior.
 
-### **Project Scope:**
+## Notebook Breakdown
+    I have divided the Project into 2 parts. 
+    
+    Part 1: The initial exploratory analysis will be performed on all the datasets 
+            one by one and then merging datasets together and uncovering the relations among multiple variables.
+               
+             Jupyter Notebook: transaction_data_analysis.ipynb
+
+    Part 2: Perform predictive analytics to understand the effectiveness of the marketing campaigns based on the 
+            coupon usage and other variables, evaluate model and generate forecast 
+            
+
+
+## **Project Scope:**
 
 
 ###### **Data Exploration:** 
@@ -46,12 +62,13 @@ _causal_data.csv:_ Data for causal inference analysis.
 
 These datasets collectively offer a holistic view of Tesco's retail landscape.
 
-### **Current Stage: SQL and Power BI for EDA**
+### **Current Stage: SQL and Jupyter Notebooks for EDA**
 
-Currently, I am conducting exploratory data analysis (EDA) using SQL for data querying and Power BI for visualization. 
-This combination allows for efficient handling of large datasets and the creation of interactive, insightful visualizations.
+Currently, I am using SQL for data querying and Jupyter Notebook for 
+exploratory data analysis. This combination allows for efficient handling of large datasets and the creation of 
+interactive, insightful visualizations.
 
-### **Future Plans: Python for Advanced Analysis**
+### **Future Plans: scikit for Advanced Analysis**
 
 In the subsequent phases, I will use Python for more complex exploratory analysis. 
 The choice of Python, particularly the Pandas library, is due to its powerful data manipulation capabilities, which are essential for handling and analyzing large datasets. 
