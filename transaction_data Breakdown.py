@@ -1,42 +1,24 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Wed Dec 13 23:44:50 2023
 
-@author: Murth
-"""
-
-'''
-Data Cleaning is an extremely important job. It consists of defining the right
- data types and finding out the null values.
-After Data Cleaning We can start understanding the main file from the datasets
-
-Why the main file?
-Let me explain it by the dataset I am analysing.
-
-The file we will be analysing is the transaction_data of the retail giant Tesco
-First  step: Understand the Data
-
-SELECT * FROM transaction_data ;
-
-This query displays all the tables in the table transaction_data. But we d
-
-
-SELECT * FROM transaction_data order by DAY ;
-
-
-Select TOP 5 QUANTITY, SALES_VALUE, Total_Sales, household_key, BASKET_ID, PRODUCT_ID from transaction_data order by Total_Sales desc ;
-This query displays the top 5 rows of the table transaction_data in descending order of Total_Sales.
-
-
-'''
+'''Simple, we can manipulate dataframes using pandas. dataframes are 2D arrays
+like spreadsheets or csv files.
+To perform the data analysis we must load the files or the datasets onto dataframes.
+Here I have created a dataframe called Reading_data_transaction.
+ pd.read_csv() reads the file and loads it into a pandas dataframe Reading_data_transaction'''
 import pandas as pd
 Reading_data_transaction = pd.read_csv('transaction_data.csv')
 Reading_data_transaction_demo = pd.read_csv('hh_demographic.csv')
 Reading_data_transaction_prod = pd.read_csv('product.csv')
 print(Reading_data_transaction_demo.head())
 print(Reading_data_transaction_prod.head())
-print(Reading_data_transaction.info()) #Gives the information about the datatypes and missing values
 print(Reading_data_transaction.head()) #Top 5 rows view of the data
+print(Reading_data_transaction.info()) #Gives the information about the datatypes and missing values
+print(Reading_data_transaction_demo.info())
+print(Reading_data_transaction_prod.info())
+
+
+print(transactions_data.isnull().count())
+
 
 
 
@@ -66,3 +48,5 @@ plt.show()
 merged = Reading_data_transaction.merge(Reading_data_transaction_prod, on='PRODUCT_ID')
 
 sales_by_category = merged.groupby('COMMODITY_DESC')['SALES_VALUE'].sum()
+
+#%%
