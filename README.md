@@ -9,8 +9,12 @@
     retail chains. Dunnhumby is Tesco's Media and insight platform, famous for helping tesco establish Clubcard. 
     I am working with eight large datasets, some featuring over 2 million rows, to uncover insights into Tesco's 
     operations and customer behavior.
+    Dataset source: https://www.kaggle.com/datasets/frtgnn/dunnhumby-the-complete-journey 
 
-## Notebook Breakdown
+## For Dashboards
+    Look for .pbix files in every repository. (sql has been used for data retrival)
+
+## Notebook Breakdown, for data analysis skills
     I have divided the Project into 2 parts. 
     
     Part 1: The initial exploratory analysis will be performed on all the datasets 
