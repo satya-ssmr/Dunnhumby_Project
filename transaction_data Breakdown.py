@@ -1,17 +1,24 @@
-empty_cols = products_data.columns[products_data.isnull().all()]
-print(len(empty_cols))
+empty_counts = {}
 
+for col in products_data.columns:
 
+    # Initialize count for each column
+    count = 0
 
-print(products_data.info())
-print(products_data.isnull().sum)
-#count the no of FALSE cells in CURR_SIZE_OF_PRODUCT
+    for val in products_data[col]:
 
+        # Check if value is string
+        if isinstance(val, str):
 
-empty_count = 0
-for val in products_data['CURR_SIZE_OF_PRODUCT']:
-    if not val.strip():
-        empty_count += 1
+            # Strip whitespace and check for empty
+            if not val.strip():
 
+                # Increment count
+                count += 1
 
-print(empty_count)
+    # Save count for column
+    empty_counts[col] = count
+
+# Print results
+print(empty_counts)
+
