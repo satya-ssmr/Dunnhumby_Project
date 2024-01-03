@@ -11,18 +11,29 @@ My Story behind choosing this project (dataset)
     operations and customer behavior.
     Dataset source: https://www.kaggle.com/datasets/frtgnn/dunnhumby-the-complete-journey 
 
+
 ## For Dashboards
     Look for .pbix files in every repository. (sql has been used for data retrival)
+    Look
+
+## For My thought process
+    Look for the file names that start with 'T'
+    T.Datacleaning_Preprocessing.ipynb
+
+## For the notebook
+    Datacleaning_Preprocessing.ipynb
 
 ## Notebook Breakdown, for data analysis skills
-    I have divided the Project into 2 parts. 
+    I have divided the Project into 3 parts. 
+    Part 1: Data cleaning and Data pre-processing; Since there are 2M+ rows in the 8 datasets it has got, There are many
+            missing values. I need to handle the missing values in an appropriate way and ready the data for the EDA.
     
-    Part 1: The initial exploratory analysis will be performed on all the datasets 
+    Part 2: The initial exploratory analysis will be performed on all the datasets 
             one by one and then merging datasets together and uncovering the relations among multiple variables.
                
              Jupyter Notebook: transaction_data_analysis.ipynb
 
-    Part 2: Perform predictive analytics to understand the effectiveness of the marketing campaigns based on the 
+    Part 3: Perform predictive analytics to understand the effectiveness of the marketing campaigns based on the 
             coupon usage and other variables, evaluate model and generate forecast 
             
 
